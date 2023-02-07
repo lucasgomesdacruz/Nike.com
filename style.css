@@ -374,11 +374,19 @@ img {
    
 }
 
+
 .jordan h1 {
     background: #111111;
     padding: 10px;
     border-radius: 5px;
     font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .jordan h1 {
+        padding: 7px;
+        font-size: 0.90rem;
+    }
 }
 
 .menu-img {
@@ -435,6 +443,13 @@ img {
     padding: 10px;
     border-radius: 5px;
     font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .tenis-nike h1 {
+        padding: 7px;
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 1220px) {
