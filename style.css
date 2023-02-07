@@ -479,9 +479,18 @@ img {
     .main4 h3 {
         font-size: 1rem;
     }
+
+    .main4 p {
+        font-size: 0.90rem;
+    }
     .menu-img {
         gap: 5px;
     }    
+
+    .menu-img button {
+        padding: 4px;
+    }
+   
 }
 
 
