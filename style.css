@@ -458,10 +458,10 @@ img {
         
     }
 
-    
-    
-
-
+    .menu-img {
+        gap: 5px;
+    }    
+      
 }
 
 @media (max-width:400px) {
