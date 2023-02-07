@@ -490,7 +490,10 @@ img {
     .menu-img button {
         padding: 4px;
     }
-   
+    
+    .menu-img button a {
+        font-size: 0.85rem;
+    }
 }
 
 
