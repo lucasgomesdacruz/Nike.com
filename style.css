@@ -366,7 +366,7 @@ img {
 .menu-img {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
     
 }
 
@@ -474,6 +474,9 @@ img {
     .main4 h3 {
         font-size: 1rem;
     }
+    .menu-img {
+        gap: 5px;
+    }    
 }
 
 
