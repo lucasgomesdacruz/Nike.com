@@ -148,6 +148,19 @@ ul {
     }
 }
 
+@media (max-width: 900px) {
+    .header {
+        padding-bottom: 7px;
+        padding: 5px;
+    }
+
+    .menu {
+        font-size: 0.85rem;
+        gap: 5px;
+    }
+
+}
+
 .main {
     background-image: url("img/nikes5.jpg");
     background-size: cover;
@@ -389,7 +402,7 @@ img {
 }
 
 .menu-img button {
-    margin: 10px 10px 20px 0px;
+    margin: 10px 10px 10px 0px;
     border: none;
     padding: 7px;
     background: #111111;
@@ -455,33 +468,30 @@ img {
 
 @media (max-width:600px) {
     .main4 img {
-        display: flex;
-        width: 200px;
-        margin: 0 auto;
-        font-size: 0.89rem;
-        
-        
+        width: 200px;              
     }
 
     .menu-img {
         gap: 5px;
     }    
-      
+   
 }
 
 @media (max-width:400px) {
     .main4 img {
         display: flex;
-        width: 170px;
+        width: 160px;
         margin: 0 auto;
     }  
 
     .main4 h3 {
         font-size: 1rem;
+        margin-left: 10px;
     }
 
     .main4 p {
-        font-size: 0.90rem;
+        font-size: 0.85rem;
+        margin-left: 10px;
     }
     .menu-img {
         gap: 5px;
@@ -489,6 +499,7 @@ img {
 
     .menu-img button {
         padding: 4px;
+        margin-left: 10px;
     }
     
     .menu-img button a {
@@ -496,12 +507,45 @@ img {
     }
 }
 
+@media (max-width:300px) {
+    .main4 img {
+        display: flex;
+        width: 140px;
+        margin: 0 auto;
+    }  
 
+    .main4 h3 {
+        font-size: 0.75rem;
+        margin-left: 5px;
+        
+    }
+
+    .main4 p {
+        font-size: 0.90rem;
+        margin-left: 5px;
+        
+    }
+
+    .menu-img {
+        gap: 2px;
+    }    
+
+    .menu-img button {
+        padding: 4px;
+        margin-left: 5px;
+        
+    }
+    
+    .menu-img button a {
+        font-size: 0.75rem;
+    
+    }
+}
 
 .footer-bg {
     display: flex;
     width: 100%;
-    height: 150px;
+    height: 160px;
     background: #111111;  
 }
 
@@ -540,5 +584,11 @@ img {
 
     .footer-menu2 li {  
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-bg {
+        font-size: 0.89rem;
     }
 }
