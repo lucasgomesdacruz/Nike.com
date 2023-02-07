@@ -132,18 +132,18 @@ ul {
     }
 
     .menu {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
 }
 
 @media (max-width: 400px) {
     .header {
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
 
     .menu {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 }
 
@@ -268,7 +268,7 @@ img {
 
 @media (max-width: 600px) {
     .nike-bg {
-    height: 720px;    
+    height: 750px;    
     }
 
     .nikered {
@@ -295,7 +295,7 @@ img {
 
 @media (max-width: 400px) {
     .nike-bg {
-    height: 600px;    
+    height: 620px;    
     }
 
     .nikered {
@@ -455,8 +455,12 @@ img {
         margin: 0 auto;
         font-size: 0.89rem;
         
+        
     }
+
     
+    
+
 
 }
 
