@@ -384,7 +384,7 @@ img {
 
 @media (max-width: 600px) {
     .jordan h1 {
-        padding: 7px;
+        padding: 4px;
         font-size: 0.90rem;
     }
 }
@@ -447,7 +447,7 @@ img {
 
 @media (max-width: 600px) {
     .tenis-nike h1 {
-        padding: 7px;
+        padding: 4px;
         font-size: 0.85rem;
     }
 }
