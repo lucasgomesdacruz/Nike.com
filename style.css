@@ -295,7 +295,7 @@ img {
     }
 
     .nikered-sub img{    
-    width: 100vw;        
+    width: 95vw;        
     }
 
 }
@@ -503,10 +503,31 @@ img {
     color: white;
 }
 
+.footer-menu li { 
+    margin-bottom: 10px;
+}
+
+.footer-menu2 li {  
+    margin-bottom: 10px;
+}
+
+
+.footer-sub a {
+    color: white;
+}
+
 @media (max-width: 800px) {
     .footer-sub {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .footer-menu li { 
+        margin-bottom: 10px;
+    }
+
+    .footer-menu2 li {  
+        margin-bottom: 10px;
     }
 
 
