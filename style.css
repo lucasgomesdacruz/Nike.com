@@ -366,7 +366,7 @@ img {
 .menu-img {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
     
 }
 
