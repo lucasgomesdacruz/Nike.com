@@ -99,6 +99,7 @@ ul {
         display: flex;
         flex-direction: column;
         padding: 0px;
+        padding-bottom: 10px;
     }
 
     .menu {
@@ -132,7 +133,7 @@ ul {
     }
 
     .menu {
-        font-size: 0.95rem;
+        font-size: 0.90rem;
     }
 
 }
@@ -230,6 +231,9 @@ img {
 }
 
 @media (max-width: 1200px) {
+    .nike-bg {
+    height: 100%;    
+    }
     .nikered {
     display: flex;
     margin: 0 auto;
@@ -252,13 +256,18 @@ img {
 
 @media (max-width: 1000px) {
     .nike-bg {
-    height: 800px;    
+    height: 100%;    
     }
 
     .nikered {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    }
+
+    .nikered-sub img{    
+    width: 500px;        
+    
     }
     
 
@@ -293,7 +302,7 @@ img {
 
 @media (max-width: 400px) {
     .nike-bg {
-    height: 620px;    
+    height: 100%;    
     }
 
     .nikered {
@@ -311,9 +320,7 @@ img {
     }
 
     .nikered-sub img{    
-    width: 300px;
-    height: 100%;
-        
+    width: 100vw;  
     }
 
 }
