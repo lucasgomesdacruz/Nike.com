@@ -607,14 +607,6 @@ img {
         display: grid;
         grid-template-columns: 1fr;
     }
-
-    .footer-menu li { 
-        margin-bottom: 10px;
-    }
-
-    .footer-menu2 li {  
-        margin-bottom: 10px;
-    }
 }
 
 @media (max-width: 600px) {
