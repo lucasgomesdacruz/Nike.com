@@ -34,7 +34,7 @@ body {
 }
 
 .header-top a:hover {
-    color: black;
+    color: #000000;
 }
 
 .header-top img {
@@ -56,7 +56,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    font-size: 1.2rem;
+    
     
 }
 
@@ -66,7 +66,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-
+    font-size: 1.1rem;
     text-decoration: none;
     list-style: none;
     color: black;
@@ -103,7 +103,8 @@ ul {
     }
 
     .menu {
-        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .input-buscar input {
@@ -111,6 +112,8 @@ ul {
     }
 
     .menu a {
+        font-size: 1.2rem;
+        display: flex;
         flex-wrap: wrap;
         padding: 10px;
         
@@ -125,41 +128,53 @@ ul {
         margin: 0 auto;
         padding: 10px 20px 0px 20px;
     }
+
 }
+
 
 @media (max-width: 600px) {
-    .header {
-        padding-bottom: 15px;
-    }
-
     .menu {
-        font-size: 0.90rem;
-    }
-
-}
-
-@media (max-width: 400px) {
-    .header {
-        padding-bottom: 10px;
-    }
-
-    .menu {
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 0.75rem;
     }
-}
 
-@media (max-width: 900px) {
-    .header {
-        padding-bottom: 7px;
-        padding: 5px;
+    .menu a {
+        padding: 7px;
+        font-size: 1rem;        
     }
-
     .menu {
-        font-size: 0.85rem;
         gap: 5px;
     }
-
 }
+
+@media (max-width: 360px) {
+    .menu {
+        margin-top: 10px;
+        margin-bottom: 10px;        
+    }
+    .menu a {
+        padding: 5px;
+        font-size: 0.80rem;             
+    }
+    .menu {
+        gap: 5px;
+    }
+}
+@media (max-width: 300px) {
+    .menu {
+        margin-top: 10px;
+        margin-bottom: 10px;        
+    }
+    .menu a {
+        padding: 5px;
+        font-size: 0.70rem;             
+    }
+    .menu {
+        gap: 5px;
+    }
+}
+
 
 .main {
     background-image: url("img/nikes5.jpg");
