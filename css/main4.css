@@ -1,0 +1,201 @@
+.main4 {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+.jordan {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+   
+}
+
+
+.jordan h1 {
+    background: #111111;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .jordan h1 {
+        padding: 4px;
+        font-size: 0.90rem;
+    }
+}
+
+.menu-img {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.main4 img{
+    display: flex;
+    width: 290px;
+    margin: 0 auto;
+    
+}
+
+.menu-imgsub {
+    font-weight: lighter;
+    color: #111111;
+    padding: 10px 10px 10px 0px;
+}
+
+.menu-img button {
+    margin: 10px 10px 10px 0px;
+    border: none;
+    padding: 7px;
+    background: #111111;
+    border-radius: 2px;
+}
+
+.menu-img button a {
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 0.89rem;
+}
+
+.menu-img button:hover {
+    background: black;
+}
+
+.tenis-nike {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.tenis-nike h1 {
+    background: #111111;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .tenis-nike h1 {
+        padding: 4px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 1220px) {
+    .menu-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
+       
+    }
+    .main4 img {
+        width: 350px;
+        margin: 0 auto;
+        font-size: 0.89rem;
+    }    
+}
+
+@media (max-width: 800px) {
+    .menu-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }   
+    
+
+    .main4 img {
+        width: 280px;
+        margin: 0 auto;
+        font-size: 1rem;
+        
+    }
+    
+}
+
+@media (max-width:600px) {
+    .main4 img {
+        width: 200px;              
+    }
+
+    .menu-img {
+        gap: 5px;
+    }    
+   
+}
+
+@media (max-width:400px) {
+    .main4 img {
+        display: flex;
+        width: 160px;
+        margin: 0 auto;
+    }  
+
+    .main4 h3 {
+        font-size: 0.90rem;
+        margin-left: 10px;
+    }
+
+    .main4 p {
+        font-size: 0.85rem;
+        margin-left: 10px;
+    }
+    .menu-img {
+        gap: 5px;
+    }    
+
+    .menu-img button {
+        padding: 4px;
+        margin-left: 10px;
+    }
+    
+    .menu-img button a {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width:300px) {
+    .main4 img {
+        display: flex;
+        width: 140px;
+        margin: 0 auto;
+    }  
+
+    .main4 h3 {
+        font-size: 0.75rem;
+        margin-left: 5px;
+        
+    }
+
+    .main4 p {
+        font-size: 0.90rem;
+        margin-left: 5px;
+        
+    }
+
+    .menu-img {
+        gap: 2px;
+    }    
+
+    .menu-img button {
+        padding: 4px;
+        margin-left: 5px;
+        
+    }
+    
+    .menu-img button a {
+        font-size: 0.75rem;
+    
+    }
+}

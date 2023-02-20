@@ -1,0 +1,152 @@
+.header-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.header-top a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: #3f3f3f;
+    font-size: 0.89rem;
+    padding: 0px 10px;
+       
+}
+
+.header-top a:hover {
+    color: #000000;
+}
+
+.header-top img {
+    width: 30px;
+    margin: 7px;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    
+}
+
+.menu a {
+    flex-wrap: wrap;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.input-buscar input {
+    width: 150px;
+    height: 25px;
+    border: solid #111111 2px;
+    border-radius: 5px;
+    padding-left: 25px;
+    background: url("img/pesquisar.svg");
+    background-repeat: no-repeat;   
+    background-size: 20px;
+    background-position: 5px;
+}
+
+@media (max-width: 900px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .input-buscar input {
+        display: none;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        
+    }
+
+    .titulo {
+        margin-bottom: 10px;
+    }
+    
+    .header-top {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 10px 20px 0px 20px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .menu {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 0.75rem;
+    }
+
+    .menu a {
+        padding: 7px;
+        font-size: 1rem;        
+    }
+    .menu {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .menu {
+        margin-top: 10px;
+        margin-bottom: 10px;        
+    }
+    .menu a {
+        padding: 5px;
+        font-size: 0.80rem;             
+    }
+    .menu {
+        gap: 5px;
+    }
+}
+@media (max-width: 300px) {
+    .menu {
+        margin-top: 10px;
+        margin-bottom: 10px;        
+    }
+    .menu a {
+        padding: 5px;
+        font-size: 0.70rem;             
+    }
+    .menu {
+        gap: 5px;
+    }
+}

@@ -1,0 +1,16 @@
+.main3-bg {
+    max-width: 100%;
+}
+
+.main3 {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+@media (max-width: 700px) {
+    .img3-4 {
+        display: none;
+    }
+}

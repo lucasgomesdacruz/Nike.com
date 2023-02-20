@@ -1,0 +1,156 @@
+.nike-bg {
+    display: flex;
+    max-width: 100vw;
+    max-height: 100%;
+    background: #12171F;
+    
+}
+
+.nike-introducao {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+.nike-sub img{    
+    width: 600px;  
+    border-radius: none;    
+    
+}
+
+
+
+.nike-titulo h1 {
+    display: flex;
+    font-size: 3rem;
+    margin: 20px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    color: white;
+    
+}
+
+.nike-titulo p {
+    margin: 20px;
+    color: white;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nike-titulo button {
+    display: flex;
+    font-size: 1rem;
+    margin: 10px;
+    border: none;
+    background: white;
+    border-radius: 5px;
+    
+}
+
+.nike-titulo button a {
+    padding: 10px 20px;
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.nike-titulo button:hover {
+    background: #3f3f3f;
+}
+
+@media (max-width: 1200px) {
+    .nike-bg {
+    height: 100%;    
+    }
+    .nike-introducao {
+    display: flex;
+    margin: 0 auto;
+    }
+
+    .nike-titulo h1 {
+    font-size: 2.5rem;
+    }
+
+    .nike-titulo p {
+        font-size: 1.3rem;
+    }
+
+    .nike-sub img{    
+    width: 500px;
+    height: 100%;
+       
+    }
+}
+
+@media (max-width: 1000px) {
+    .nike-introducao {
+    height: 100%;    
+    }
+
+    .nike-introducao {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    }
+
+    .nike-sub img{    
+    width: 500px;        
+    
+    }
+    
+
+}
+
+
+
+@media (max-width: 600px) {
+    .nike-bg {
+    max-height: 100%; 
+    }
+
+    .nike-introducao {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    }
+
+    .nike-titulo h1 {
+    font-size: 2.1rem;
+    }
+
+    .nike-titulo p {
+        font-size: 1.2rem;
+    }
+
+    .nike-sub img{    
+    width: 100%;        
+    }
+
+}
+
+@media (max-width: 400px) {
+    .nike-introducao {
+    max-height: 100%;   
+    }
+
+    .nike-introducao {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    }
+
+    .nike-titulo h1 {
+    font-size: 1.8rem;
+    }
+
+    .nike-titulo p {
+        font-size: 1.1rem;
+    }
+
+    .nike-sub img{    
+    width: 100vw;  
+    }
+
+}
