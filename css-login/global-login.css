@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Fira Sans", Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    width: 300px;
+    display: block;
+}
+
+.main-login-bg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.login-right {
+    border-radius: 5px;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-login h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textfield {
+    font-size: 1rem;
+    color: #111111;
+}
+
+.textfield input{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    border: solid #cecece 1px;
+    border-radius: 5px;
+}
+
+.btn-login  {
+    width: 400px;
+    margin-bottom: 10px;
+    background: #111111;
+    border-radius: 10px;
+    
+}
+
+.btn-login:hover {
+    background: #000000;
+}
+
+.btn-login a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.senha {
+    margin-bottom: 10px;
+    color: #929191;
+    text-align: center;
+    padding: 5px;
+}
+
+.senha:hover {
+    color: #575656;
+}
+
+@media (max-width: 600px) {
+    .login-right {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    img {
+        width: 200px;
+    }
+
+    .card-login h1 {
+        font-size: 1.8rem;
+    }    
+
+    .textfield input{
+        width: 300px;
+    }
+
+    .btn-login  {
+        width: 300px;
+    }
+}

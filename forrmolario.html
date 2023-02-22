@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-formolario/style-formolario.css">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="formolario"> 
+        <section class="formolario-introducao">
+
+            <div>
+                <a href="index.html"><img src="img/logos/logo.svg" alt="Logo Nike"> </a>
+            </div>
+            
+            <form action="#">
+                <h1>TORNE-SE UM MEMBRO DA NIKE</h1>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+
+                <label for="data">Data de Nascimento</label>
+                <input type="date" id="data" name="data">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox">Aceito os termos de condições da empresa.</label>
+                </div>
+
+                <button class="btn-enviar"><a href="index.html">Enviar</a></button>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>

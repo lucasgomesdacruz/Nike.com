@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Fira Sans", Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    width: 300px;
+    display: block;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formolario {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.formolario-introducao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+input {
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    border: solid #cecece 1px;
+    border-radius: 5px;   
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    color: #707070;
+}
+
+.checkbox input {
+    max-width: 20px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.btn-enviar  {
+    max-width: 400px;
+    margin-bottom: 10px;
+    background: #111111;
+    border-radius: 10px;
+    color: #cecece;
+}
+
+.btn-enviar:hover {
+    background: #000000;
+}
+
+.btn-enviar a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    img {
+        max-width: 200px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    input {
+        max-width: 300px;
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+       
+    }
+    .checkbox label {
+        font-size: 0.89rem;
+    }
+
+    .checkbox input {
+        margin-right: 5px;
+    }
+
+    .btn-enviar {
+        max-width: 300px;
+    }
+
+}
+
