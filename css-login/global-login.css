@@ -19,6 +19,7 @@ img {
     width: 100vw;
     height: 100vh;
     display: flex;
+    
 }
 
 .main-section {
@@ -27,11 +28,12 @@ img {
     justify-content: center;
     align-items: center;
     margin: auto;
+    
 }
 
 .login-right {
     border-radius: 5px;
-    max-width: 350px;
+    width: 400px;
     display: flex;
     justify-content: center;
 }
@@ -48,7 +50,7 @@ img {
 }
 
 .textfield input{
-    width: 400px;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
@@ -58,7 +60,7 @@ img {
 }
 
 .btn-login  {
-    width: 400px;
+    width: 100%;
     margin-bottom: 10px;
     background: #111111;
     border-radius: 10px;
@@ -90,6 +92,7 @@ img {
 }
 
 @media (max-width: 600px) {
+    
     .login-right {
         width: 300px;
         height: 300px;
@@ -105,10 +108,10 @@ img {
     }    
 
     .textfield input{
-        width: 300px;
+        width: 100%;
     }
 
     .btn-login  {
-        width: 300px;
+        width: 100%;
     }
 }
