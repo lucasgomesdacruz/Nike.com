@@ -87,7 +87,7 @@ input {
 
 @media (max-width: 600px) {
     img {
-        max-width: 200px;
+        max-width: 150px;
     }
 
     h1 {
