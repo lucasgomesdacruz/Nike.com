@@ -58,7 +58,7 @@ p {
     display: flex;
     color: #494949;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 10px 40px;
 }
 
 .btn-enviar  {
@@ -67,6 +67,7 @@ p {
     background: #111111;
     border-radius: 10px;
     color: #cecece;
+    border: #111111;
 }
 
 .btn-enviar:hover {
@@ -84,10 +85,10 @@ p {
 
 @media (max-width: 450px) {
     input {
-        width: 300px;
+        width: 260px;
     }
 
     .btn-enviar  {
-    width: 300px;
+    width: 260px;
     }
 }

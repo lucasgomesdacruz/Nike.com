@@ -70,6 +70,7 @@ input {
     background: #111111;
     border-radius: 10px;
     color: #cecece;
+    border: #111111;
 }
 
 .btn-enviar:hover {
