@@ -52,7 +52,7 @@ img {
 }
 
 .textfield input{
-    width: 100%;
+    width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
@@ -100,11 +100,12 @@ img {
     }
 
     .card-login h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        text-align: center;
     }    
 
     .textfield input{
-        width: 100%;
+        width: 300px;
     }
 
     .btn-login  {
