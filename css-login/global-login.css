@@ -23,15 +23,15 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;   
+    margin: auto;
 }
 
 .main-section {
-    width: 60vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: auto;
 }
 
 .login-right {
@@ -44,6 +44,7 @@ img {
     font-size: 2rem;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 .textfield {
@@ -52,7 +53,7 @@ img {
 }
 
 .textfield input{
-    width: 100%;
+    width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
@@ -105,10 +106,10 @@ img {
     }    
 
     .textfield input{
-        width: 100%;
+        width: 260px;
     }
 
     .btn-login  {
-        width: 100%;
+        width: 260px;
     }
 }
