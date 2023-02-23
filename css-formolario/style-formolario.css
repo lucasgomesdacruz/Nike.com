@@ -43,7 +43,7 @@ form {
 }
 
 input {
-    max-width: 400px;
+    width: 400px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
@@ -91,11 +91,11 @@ input {
     }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     input {
-        max-width: 300px;
+        width: 260px;
     }
     .checkbox {
         display: flex;
@@ -103,15 +103,17 @@ input {
        
     }
     .checkbox label {
-        font-size: 0.89rem;
+        font-size: 0.70rem;
     }
 
     .checkbox input {
         margin-right: 5px;
+        height: 15px;
+        
     }
 
     .btn-enviar {
-        max-width: 300px;
+        max-width: 260px;
     }
 
 }
