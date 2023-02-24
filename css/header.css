@@ -38,6 +38,7 @@
 }
 
 .menu {
+    flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,7 +48,6 @@
 }
 
 .menu a {
-    flex-wrap: wrap;
     display: block;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,20 @@
     font-size: 1.1rem;
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: #111111;
+}
+
+.menu a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: #111111;
+    transition: 0.3s ease-in-out;
+}
+
+.menu a:hover:after {
+    width: 100%;
 }
 
 .input-buscar input {
