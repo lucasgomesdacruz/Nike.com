@@ -1,42 +1,100 @@
-.footer-bg {
-    display: flex;
-    width: 100%;
-    height: 160px;
-    background: #111111;  
+.footer {
+    background: #000000;
+    margin-top: 20px;
 }
 
-.footer-sub {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    width: 1200px;
+.footer-container { 
+    max-width: 1200px;
+    padding: 60px 20px 60px 20px;
     margin: 0 auto;
-    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+      
 }
 
-.footer-menu li { 
-    margin-bottom: 10px;
+.footer-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #cccccc;
 }
 
-.footer-menu2 li {  
-    margin-bottom: 10px;
+
+
+.footer-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
 }
 
-
-.footer-sub a {
-    color: white;
+.footer-contato li {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #ffffff;
+    margin: 10px 10px 30px 10px;
 }
 
-@media (max-width: 800px) {
-    .footer-sub {
-        display: grid;
+.footer-contato a {
+    display: inline-flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer-contato a:hover {
+    color: #8f8f8f;
+    
+}
+.footer-contato img {
+    width: 40px;
+}
+
+.footer-contato img:nth-child(2) {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.footer-copy {
+    grid-column: 1 / -1;
+    font-size: 1.125rem;
+    color: #8f8f8f;
+}
+
+@media (max-width: 1000px) {
+    .footer-container {
         grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-contato li {
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width: 600px) {
-    .footer-bg {
-        font-size: 0.89rem;
+@media (max-width: 500px) {
+    .footer-contato {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        margin: 5px;
+    }
+
+    .footer-texto {
+        margin: 5px;
+        font-size: 1.3rem;
+    }
+
+    .footer-container {
+        padding: 60px 0px 60px 0px;
+        margin: 5px;
+    }
+
+    .footer-contato li {
+        margin: 10px 10px 10px 0px;
     }
 }

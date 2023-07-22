@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css-formolario/style-formolario.css">
-    <title>formulario</title>
+   
     <link rel="stylesheet" href="style.css">
+    <script src="./Js-formulario/fomulario.js" defer></script>
+     <title>formulario</title>
 </head>
 <body>
     <main class="formolario"> 
@@ -16,7 +18,7 @@
                 <a href="index.html"><img src="img/logos/logo.svg" alt="Logo Nike"> </a>
             </div>
             
-            <form action="#">
+            <form id="form">
                 <h1>TORNE-SE UM MEMBRO DA NIKE</h1>
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Nome" required>
@@ -34,11 +36,11 @@
                 <input type="date" id="data" name="data">
 
                 <div class="checkbox">
-                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <input type="checkbox" id="checkbox" name="checkbox" required>
                     <label for="checkbox">Aceito os termos de condições da empresa.</label>
                 </div>
 
-                <button class="btn-enviar"><a href="index.html">Enviar</a></button>
+                <button class="btn-enviar" type="submit"><a href="index.html">Enviar</a></button>
 
             </form>
         </section>
