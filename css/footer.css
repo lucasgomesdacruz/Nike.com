@@ -86,7 +86,7 @@
 
     .footer-texto {
         margin: 5px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .footer-container {
@@ -96,5 +96,9 @@
 
     .footer-contato li {
         margin: 10px 10px 10px 0px;
+    }
+    .footer-contato a {
+        font-size: 1.2rem;
+
     }
 }
