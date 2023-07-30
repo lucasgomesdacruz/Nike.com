@@ -37,27 +37,29 @@ form.addEventListener("submit", (event) => {
     form.submit();
 
 })
+    function formulario() {
+    function isEmailValid(email) {
 
-function isEmailValid(email) {
-
-    // cria uma regex para validar email
-    const emailRegex = new RegExp(
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
-    )
-
-    if(emailRegex.test(email)) {
-        return true
+        // cria uma regex para validar email
+        const emailRegex = new RegExp(
+            /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
+        )
+    
+        if(emailRegex.test(email)) {
+            return true
+        }
+    
+        return false
     }
-
-    return false
-}
-
-// Função que valida a senha
-function validatePassword(password, minDigits) {
-    if(password.length >= minDigits) {
-        // senha válida
-        return true
+    
+    // Função que valida a senha
+    function validatePassword(password, minDigits) {
+        if(password.length >= minDigits) {
+            // senha válida
+            return true
+        }
+        //senha invalida
+        return false
     }
-    //senha invalida
-    return false
+    
 }
