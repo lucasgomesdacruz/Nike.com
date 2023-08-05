@@ -1,6 +1,6 @@
 .femenino-container-produtos {
     max-width: 1400px;
-    max-height: auto;
+    max-height: 100%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
