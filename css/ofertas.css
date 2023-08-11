@@ -1,7 +1,60 @@
-.ofertas h1{
+.ofertas-container {
     max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form label {
+    display: block;
+    font: 400 1rem/1.5 "Poppins", sans-serif;
+    margin-bottom: 4px;
+}
+
+.form .col-2 {
+    grid-column:  span 2;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    background: white;
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.botao {
+    display: inline-block;
+    padding: 16px 32px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgb(0, 0, 0, .1);
+    text-transform: uppercase;
+    color: black;
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    max-width: max-content;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+    .form .col-2 {
+        grid-column: 1;
+    }
 }
