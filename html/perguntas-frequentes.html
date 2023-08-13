@@ -11,24 +11,29 @@
     </script>
 </head>
 <body>
-    <header class="header-top">
-        <nav>
-            <img src="../img/logos/jordan.svg" alt="Jordan-Logo">
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="./login.html">Entrar</a></li>
-            </ul>
-        </nav>
+    <header class="header-bg">
+            <ul class="header-container">
+                <li>
+                    <img src="../img/logos/jordan.svg" alt="Jordan-Logo">
+                </li>
+                <li>
+                    <a href="../html/login.html">Entrar</a>
+                </li>
+            </ul> 
     </header>
-    <header class="header">
-        <a class="titulo" href="../index.html"><img src="../img/logos/logo.svg" alt="Nike-Logo"></a>
-        <nav>
-            <ul class="menu">                
+    <header class="header-lista-bg">
+        <nav class="nav">
+            <div class="titulo">
+                <a href="../index.html"><img src="../img/logos/logo.svg" alt="Nike-Logo"></a> 
+            </div>
+            <div class="mobile-menu">
+                <button class="hamburguer"></button>
+            </div> 
+            <ul class="nav-list">       
                 <li><a href="../index.html" target="_parent">Home</a></li>
-                <li><a href="masculino.html" target="_parent">Masculino</a></li>
-                <li><a href="feminino.html" target="_parent">Feminino</a></li>
-                <li><a href="infantil.html" target="_parent">Infantil</a></li>
+                <li><a href="./masculino.html" target="_parent">Masculino</a></li>
+                <li><a href="./feminino.html" target="_parent">Feminino</a></li>
+                <li><a href="./infantil.html" target="_parent">Infantil</a></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +45,7 @@
             <dl class="perguntas-dt">
                 <div class="container-perguntas-bg ">
                     <dt class="" aria-controls="pergunta1" aria-expanded="true">Quais são as opções de entrega disponíveis na Nike Store?</dt>
-                    <dd class="ativo" id="pergunta1">Oferecemos três opções de entrega: entrega padrão, entrega expressa e retirada na loja.</dd>
+                    <dd class="" id="pergunta1">Oferecemos três opções de entrega: entrega padrão, entrega expressa e retirada na loja.</dd>
                 </div>
                 <div class="container-perguntas-bg">
                     <dt class="" aria-controls="pergunta2" aria-expanded="false">Como posso rastrear meu pedido após a compra?</dt>
@@ -97,5 +102,6 @@
     </footer>
     <script src="../js/plugins/plugin.js"></script>
     <script src="../js/perguntas.js"></script>
+    <script src="../js/menu.js" defer></script>
 </body>
 </html>
