@@ -112,9 +112,9 @@
         transition: 1s ease-out;
 
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        gap: 0;
+        gap: 40px;
         pointer-events: none;
     }
 
