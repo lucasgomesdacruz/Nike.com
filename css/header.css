@@ -82,6 +82,7 @@
     background: none;
     border-top: 3px solid #000000;
     cursor: pointer;
+   
 }
 
 .hamburguer::before,
@@ -94,12 +95,15 @@
     margin-top: 5px;
     position: relative;
     transition: 0.3s;
+   
+   
+    
 }
 
 @media (max-width: 750px) {
     .hamburguer {
         display: block;
-        z-index: 1;
+        z-index: 2;
     }
     .nav-list {
         position: fixed;
@@ -110,12 +114,12 @@
         background: #ffffff;
         clip-path: circle(100px at 90% -30%);
         transition: 1s ease-out;
-
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 40px;
         pointer-events: none;
+        z-index: 1;
     }
 
     .nav-list a {
@@ -150,15 +154,18 @@
         top: 26px;
         right: 16px;
         border-top-color: transparent;
+      
     }
 
     .nav.active .hamburguer::before {
         transform: rotate(135deg);
+        
     }
 
     .nav.active .hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
+        
     }
 }
 
