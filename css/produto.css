@@ -1,0 +1,120 @@
+.container-bg {
+    max-width: 1200px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+}
+.container img {
+    width: 600px;
+    border-radius: 5px;
+}
+.container-info {
+    width: 400px;
+    display: grid;
+    align-content: baseline;
+    justify-self: left;
+    margin: 0 auto;
+}
+.container-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.container-info-peca {
+    display: grid;
+    justify-self: left;
+}
+.container-info-peca p {
+    margin-bottom: 10px;
+}
+
+/* Tamanho */
+
+.produto-tamanho h2 {
+    font-size: 1rem;
+} 
+
+.produto-tamanho ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.produto-tamanho li {
+    padding: 0 7px;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    text-align: center;
+    font-size: .6875rem;
+    line-height: 26px;
+    font-weight: 700;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.produto-tamanho li:hover {
+    color: #ffffff;
+    background: #111111;
+    border: 1px solid #111111;
+}
+
+
+/*/////////////Botao////////////////// */
+
+.botão-comprar {
+    color: #ffffff;
+    padding: 16px 90px;
+    border: 1px solid #111111;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    max-width: max-content;
+    display: inline-block;
+    background: #111111;
+}
+
+.botão-comprar:hover {
+    background: #181818;
+    border: 1px solid #181818;
+}
+
+@media (max-width: 1050px) {
+    .container-bg {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+    .container img {
+        width: 400px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container img {
+        width: 250px;
+        border-radius: 2px;
+    }
+    .container-info h1 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .container-info {
+        width: 250px;
+    }
+    .botão-comprar {
+        color: #ffffff;
+        padding: 16px 60px;
+    }
+}
+
+
+
