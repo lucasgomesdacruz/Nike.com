@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (const item of carrinhoUnico) {
             const produtoDiv = document.createElement('div');
             produtoDiv.innerHTML = `
+            <div class="container-componentes">
                 <div class="conteudo-tipo">
                     <img src="${item.image}" alt="" class="cart-product-image">
                 </div>
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p class="product-type">${item.title}</p>
                     </div>
                     <div class="conteudo-info">
-                        <p>Valor total</p>
+                        <p>Valor</p>
                         <p class="cart-product-price">${item.price}</p>
                     </div>
                     <div class="conteudo-input">
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <button type="button" class="remove-product-button">Remover</button>
                     </div>
                 </div>
+            </div>
             `;
 
             const quantidadeInput = produtoDiv.querySelector('.carrinho-input');
@@ -81,8 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
         totalAmount = totalAmount.replace('.', ',');
         document.querySelector('.cart-total-container span').innerText = 'R$ ' + totalAmount;
     }
-
-    // ... Resto do código
 
     const finalizarCompraButton = document.querySelector('.botao-finalizar');
     finalizarCompraButton.addEventListener('click', function () {
