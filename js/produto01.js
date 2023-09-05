@@ -1,13 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const comprarButton = document.querySelector('.botao-comprar');
 
-    
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-   
-    const clickEvent = isMobile ? 'touchstart' : 'click';
-
-    comprarButton.addEventListener(clickEvent, function () {
+    comprarButton.addEventListener('click', function () {
         const productImage = document.querySelector('.product-image').src;
         const productTitle = document.querySelector('.product-title').innerText;
         const productPrice = document.querySelector('.product-price').innerText;
