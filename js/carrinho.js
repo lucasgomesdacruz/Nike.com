@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             const removerButton = produtoDiv.querySelector('.remove-product-button');
-            removerButton.addEventListener('click', function () {
+            removerButton.addEventListener('touchstart', function () {
                 carrinhoUnico.splice(carrinhoUnico.indexOf(item), 1);
                 localStorage.setItem('carrinho', JSON.stringify(carrinhoUnico));
                 atualizarCarrinho();
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // ... Resto do código
 
     const finalizarCompraButton = document.querySelector('.botao-finalizar');
-    finalizarCompraButton.addEventListener('click', function () {
+    finalizarCompraButton.addEventListener('touchstart', function () {
         const carrinhoItens = JSON.parse(localStorage.getItem('carrinho')) || [];
         if (carrinhoItens.length === 0) {
             alert('Seu carrinho está vazio. Não é possível finalizar a compra.');

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const comprarButton = document.querySelector('.botao-comprar');
 
-    comprarButton.addEventListener('click', function () {
+    comprarButton.addEventListener('touchstart', function () {
         const productImage = document.querySelector('.product-image').src;
         const productTitle = document.querySelector('.product-title').innerText;
         const productPrice = document.querySelector('.product-price').innerText;
