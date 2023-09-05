@@ -19,7 +19,7 @@
     border-radius: 2px;
 }
 
-.container-componetes {
+.container-componentes {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -75,6 +75,8 @@
 
 }
 
+
+
 .carrinho-remover button{
     max-width: max-content;
     padding: 10px 15px;
@@ -106,8 +108,22 @@
     margin-bottom: 10px;
 }
 
+.container-card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart-total-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+
 @media (max-width: 900px) {
-    .container-componetes {
+    .container-componentes {
         flex-direction: column;
         flex-wrap: wrap;
     }

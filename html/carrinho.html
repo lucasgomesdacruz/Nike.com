@@ -39,34 +39,47 @@
             <div class="carrinho-titulo">
                 <h1>Carrinho Nike</h1>
             </div>
-            <div class="container-componetes">
+            <div class="container-componentes">
                 <div class="conteudo-tipo">
-                    <img src="../img/masculino/Jordan Artist Series by Jacob Rochester.png" alt="">
+                    <img src="" alt="" class="cart-product-image">
                 </div>
                 <div class="container-info-carrinho">
                     <div class="conteudo-info">
                         <p>Produto</p>
-                        <p>Camiseta</p>
+                        <p class="product-type">Camiseta</p>
                     </div>
                     <div class="conteudo-info">
                         <p>Valor total</p>
-                        <p>R$ 80,00</p>
+                        <p class="cart-product-price">R$80,00</p>
                     </div>
                     <div class="conteudo-input">
                         <div class="quantidade-info">
                             <p>Quantidade:</p>
-                            <input type="number" value="2" min="0" class="carrinho-input">
+                            <input type="number" value="0" min="0" class="carrinho-input">
                         </div>
                     </div>
                     <div class="carrinho-remover">
-                        <button type="button">Remover</button>
+                        <button type="button" class="remove-product-button">Remover</button>
                     </div>
                 </div>
+            </div>
+
+            
+
+            
+        </div>
+        
+        <div class="cart-total-container">
+            <div>
+                <div class="cart-total-container">
+                    <strong>Total</strong>
+                    <span></span>
+                </div>
+            
             </div>
             <div>
                 <button type="button" class="botao-finalizar">Finalizar Compra</button>
             </div>
-            
         </div>
     </section>
 
@@ -137,6 +150,7 @@
             <p class="footer-copy">© 2023 - Design and Code by Lucas gomes.</p>
         </div>
     </footer>
-    <script src="../js/menu.js" defer></script>
+    <script src="../js/menu.js"></script>
+    <script async src="../js/carrinho.js"></script>
 </body>
 </html>

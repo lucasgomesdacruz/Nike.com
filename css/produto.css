@@ -1,4 +1,6 @@
-.container-bg {
+
+
+.container-informacoes {
     max-width: 1200px;
     display: grid;
     justify-content: space-evenly;
@@ -66,7 +68,7 @@
 
 /*/////////////Botao////////////////// */
 
-.botão-comprar {
+.botao-comprar {
     color: #ffffff;
     padding: 16px 90px;
     border: 1px solid #111111;
@@ -79,13 +81,13 @@
     background: #111111;
 }
 
-.botão-comprar:hover {
+.botao-comprar:hover {
     background: #181818;
     border: 1px solid #181818;
 }
 
 @media (max-width: 1050px) {
-    .container-bg {
+    .container-informacoes {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -110,7 +112,7 @@
     .container-info {
         width: 250px;
     }
-    .botão-comprar {
+    .botao-comprar {
         color: #ffffff;
         padding: 16px 60px;
     }
