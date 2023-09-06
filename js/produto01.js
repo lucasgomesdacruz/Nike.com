@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const comprarButton = document.querySelector('.botao-comprar');
 
+    function exibirAlerta() {
+        alert('Produto adicionado ao carrinho!');
+    }
+
     comprarButton.addEventListener('click', function () {
         const productImage = document.querySelector('.product-image').src;
         const productTitle = document.querySelector('.product-title').innerText;
@@ -16,8 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
         let carrinhoItens = JSON.parse(localStorage.getItem('carrinho')) || [];
         carrinhoItens.push(newItem);
         localStorage.setItem('carrinho', JSON.stringify(carrinhoItens));
+
+        exibirAlerta()
     });
 });
+
+
+
 
 
 
