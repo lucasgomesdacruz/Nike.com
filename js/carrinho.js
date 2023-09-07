@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
             `;
-
             const quantidadeInput = produtoDiv.querySelector('.carrinho-input');
             quantidadeInput.addEventListener('change', function () {
                 const newQuantity = parseInt(quantidadeInput.value);
