@@ -5,7 +5,6 @@
     align-items: center;
     margin: 0 auto;
     flex-direction: column;
-    height: 1000px;
 }
 
 
@@ -22,12 +21,11 @@
 .container-componentes {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 40px;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     background: #f5f5f5;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
     border-radius: 5px;
 }
 
@@ -144,10 +142,19 @@
     }
 }
 
+@media (max-width: 350px) {
+    .container-componentes img {
+        width: 200px;
+    }
 
+    .conteudo-info p {
+        font-size: 0.89rem;
+    }
 
-
-
+    .container-componentes {
+        margin: 5px;
+    }
+}
 
 
   
