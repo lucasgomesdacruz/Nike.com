@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/logos/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/menu.js" defer></script>
+    <script src="js/app.js" defer></script>
     <title>Nike</title>
 </head>
 <body>
@@ -24,7 +25,9 @@
     <header class="header-lista-bg">
         <nav class="nav">
             <div class="titulo">
-                <a href="index.html"><img src="img/logos/logo.svg" alt="Nike-Logo"></a> 
+                <a href="index.html">
+                    <img src="img/logos/logo.svg" alt="Nike-Logo" width="35" height="35">
+                </a> 
             </div>
             <div class="mobile-menu">
                 <button class="hamburguer"></button>
@@ -48,7 +51,7 @@
                     </p>
                 </div>           
                 <div class="nike-sub">
-                    <img src="img-index/nike.png" alt="">
+                    <img src="img-index/nike.png" alt="imagem Nike" width="600" height="600">
                 </div>  
         </div>
     </main>
@@ -195,24 +198,30 @@
                 <h1>Receba ofertas e descontos exclusivos</h1>
             </div>
             <div class="contato-formulario" aria-label="Formulário">
-                <form  class="form">
+                <form   
+                    class="form" 
+                    action="https://formsubmit.co/lucaass1997rp@gmail.com" 
+                    method="POST" 
+                    data-form
+                >
                     <div>
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
                     </div>
                     <div>
                         <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone" name="telefone" placeholder="21 9999-9999">
+                        <input type="text" id="telefone" name="telefone" placeholder="21 9999-9999" required>
                     </div>
                     <div class="col-2">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="contato@gmail.com">
+                        <input type="email" id="email" name="email" placeholder="contato@gmail.com" required>
                     </div>
                     <div class="col-2">
                         <label for="mensagem">Mensagem</label>
-                        <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+                        <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?" required></textarea>
                     </div>
-                    <button class="botao col-2">Enviar Mensagem</button>
+                
+                    <button type="submit" class="botao col-2" data-button>Enviar Mensagem</button>
                 </form>
             </div>
         </div>
@@ -240,11 +249,8 @@
                     </a>                   
                 </li>
             </ul>
-
             <p class="footer-copy">© 2023 - Design and Code by Lucas gomes.</p>
         </div>
-    </footer>
-
-   
+    </footer>  
 </body>
 </html>
