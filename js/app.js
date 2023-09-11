@@ -1,4 +1,4 @@
-class FormSubmit{
+class FormSubmit {
     constructor(settings) {
         this.settings = settings;
         this.form = document.querySelector(settings.form);
@@ -21,7 +21,7 @@ class FormSubmit{
         const formObject = {};
         const fields = this.form.querySelectorAll("[name]");
         fields.forEach((field) => {
-          formObject[field.getAttribute("name")] = field.value;
+            formObject[field.getAttribute("name")] = field.value;
         });
         return formObject;
     }
@@ -34,6 +34,16 @@ class FormSubmit{
 
     async sendForm(event) {
         try {
+            event.preventDefault();
+
+            const formObject = this.getFormObject();
+            const areAllFieldsFilled = Object.values(formObject).every(value => value.trim() !== '');
+
+            if (!areAllFieldsFilled) {
+                alert('Por favor, preencha todos os campos antes de enviar o formulário.');
+                return;
+            }
+
             this.onSubmission(event);
             await fetch(this.url, {
                 method: "POST",
@@ -41,8 +51,8 @@ class FormSubmit{
                     "Content-type": "application/json",
                     Accept: "application/json",
                 },
-                body: JSON.stringify(this.getFormObject()),
-            })
+                body: JSON.stringify(formObject),
+            });
             this.displaySuccess();
         } catch (error) {
             this.displayError();
@@ -63,5 +73,3 @@ const formSubmit = new FormSubmit({
     error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
-
-

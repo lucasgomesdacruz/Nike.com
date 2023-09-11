@@ -1,0 +1,46 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: #000; /* Cor do texto em preto */
+    text-align: center;
+    max-width: 90%;
+}
+
+.modal-content h2 {
+    color: #000;
+    margin-bottom: 10px; /* Cor do título em preto */
+}
+
+.modal-content p{
+    margin-bottom: 10px; 
+}
+
+.modal-content button {
+    background-color: #000; /* Cor do botão em preto */
+    color: #fff; /* Cor do texto do botão em branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+/* Estilize o botão quando hover, se necessário */
+.modal-content button:hover {
+    background-color: #333; /* Cor do botão em cinza escuro ao passar o mouse */
+}
